@@ -1,0 +1,473 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	color: #fff;
+	font-family: sans-serif;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.main {
+	background: url(../img/main-background.jpeg) no-repeat center;
+	background-size: cover;
+
+	position: relative;
+}
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10px;
+}
+
+.logo {
+	margin-right: auto;
+}
+
+.nav__links {
+	margin-right: 180px;
+}
+
+.link {
+	list-style: none;
+	display: inline-block;
+	padding: 0px 10px;
+	cursor: pointer;
+}
+
+.link a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+
+	font-size: 13px;
+	font-weight: 700;
+
+	position: relative;
+	line-height: 1;
+
+	transition: .1s linear;
+}
+
+.link a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #691292; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.link a:hover:after,
+.link a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.link a:hover {
+	color: #691292;
+}
+
+.main-inner {
+	width: 100%;
+	max-width: 780px;
+	margin: 0 auto;
+	min-height: 530px;
+
+	padding-top: 100px;
+}
+
+.main-img {
+	text-align: center;
+}
+
+.main-p {
+	padding-top: 40px;
+	text-align: center;
+	color: #806f9b;
+}
+
+.main-p p {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.main-button {
+	padding-top: 65px;
+	text-align: center;
+}
+
+.main-button button {
+	color: #000;
+	background: #fff;
+	padding: 10px 30px;
+	border: none;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .1s linear;
+
+	margin-bottom: 40px;
+}
+
+.main-button button:hover {
+	background: #000;
+	color: #fff;
+}
+
+.main-back {
+	background: #dadadb;
+	opacity: .9;
+	padding: 40px;
+}
+
+/* section  */
+
+.section-block {
+	flex-grow: 1;
+}
+
+.section-block {
+	background: #fff;
+	height: 160px;
+}
+
+.main-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 4px;
+}
+
+.section-text {
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 40px;
+	letter-spacing: 15px;
+}
+
+.section-img {
+	padding-left: 45px;
+}
+
+/* section cotalog  */
+
+.cotalog-intro-01 {
+	background-image: url(../img/cotalog/banner-01.jpeg);
+	height: 350px;
+
+
+}
+
+.cotalog-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+}
+
+.cotalog-h1 {
+	padding-bottom: 25px;
+}
+
+.cotalog-h1 h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cotalog-p p {
+	color: #9991a5;
+	font-size: 20px;
+}
+
+
+.cotalog-intro-02 {
+	background-image: url(../img/cotalog/banner-02.jpeg);
+	height: 350px;
+
+
+}
+
+.cotalog-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+}
+
+.cotalog-h1 {
+	padding-bottom: 25px;
+}
+
+.cotalog-h1 h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cotalog-p p {
+	color: #9991a5;
+	font-size: 20px;
+}
+
+
+.cotalog-intro-03 {
+	background-image: url(../img/cotalog/banner-03.jpeg);
+	height: 350px;
+
+
+}
+
+.cotalog-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+}
+
+.cotalog-h1 {
+	padding-bottom: 25px;
+}
+
+.cotalog-h1 h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cotalog-p p {
+	color: #9991a5;
+	font-size: 20px;
+}
+
+
+.cotalog-intro-03 {
+	background-image: url(../img/cotalog/banner-03.jpeg);
+	height: 350px;
+
+
+}
+
+.cotalog-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+}
+
+.cotalog-h1 {
+	padding-bottom: 25px;
+}
+
+.cotalog-h1 h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cotalog-p p {
+	color: #9991a5;
+	font-size: 20px;
+}
+
+
+.cotalog-intro-04 {
+	background-image: url(../img/cotalog/banner-04.jpeg);
+	height: 350px;
+
+
+}
+
+.cotalog-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+}
+
+.cotalog-h1 {
+	padding-bottom: 25px;
+}
+
+.cotalog-h1 h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cotalog-p p {
+	color: #9991a5;
+	font-size: 20px;
+}
+
+
+.cotalog-intro-05 {
+	background-image: url(../img/cotalog/banner-05.jpeg);
+	height: 350px;
+
+
+}
+
+.cotalog-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+}
+
+.cotalog-h1 {
+	padding-bottom: 25px;
+}
+
+.cotalog-h1 h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cotalog-p p {
+	color: #9991a5;
+	font-size: 20px;
+}
+
+
+.cotalog-intro-06 {
+	background-image: url(../img/cotalog/banner-06.jpeg);
+	height: 350px;
+
+
+}
+
+.cotalog-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+}
+
+.cotalog-h1 {
+	padding-bottom: 25px;
+}
+
+.cotalog-h1 h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cotalog-p p {
+	color: #9991a5;
+	font-size: 20px;
+}
+
+
+.cotalog-intro-07 {
+	background-image: url(../img/cotalog/banner-07.jpeg);
+	height: 350px;
+
+
+}
+
+.cotalog-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px;
+}
+
+.cotalog-h1 {
+	padding-bottom: 25px;
+}
+
+.cotalog-h1 h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.cotalog-p p {
+	color: #9991a5;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.section-transition {
+	background-color: #20004d;
+	height: 150px;
+}
+
+/* footer  */
+
+footer {
+	background: #fff;
+	height: 220px;
+}
+
+.footer-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-padding {
+	padding: 70px 100px;
+}
+
+
+.footer-p p {
+	color: #000;
+	font-size: 25px;
+	font-weigth: 700;
+}
+
+.footer-media {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-copyright {
+	color: #000;
+}
+
+.footer-copyright span {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.footer-copyright p {
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.social-links {
+	letter-spacing: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
