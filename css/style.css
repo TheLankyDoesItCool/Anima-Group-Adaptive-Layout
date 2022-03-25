@@ -41,6 +41,11 @@ body {
 	margin-right: auto;
 }
 
+.logo img {
+	width: 183px;
+	height: 64px;
+}
+
 .nav__links {
 	margin-right: 180px;
 }
@@ -92,7 +97,8 @@ body {
 	margin: 0 auto;
 	min-height: 530px;
 
-	padding-top: 100px;
+	padding-top: 90px;
+	padding-bottom: 100px;
 }
 
 .main-img {
@@ -137,7 +143,6 @@ body {
 
 .main-back {
 	background: #fff;
-	opacity: .9;
 	padding: 40px;
 }
 
@@ -175,10 +180,8 @@ body {
 /* section cotalog  */
 
 .cotalog-intro-01 {
-	background-image: url(../img/cotalog/banner-01.jpeg);
+	background-image: url(../img/cotalog-2/banner-01.jpg);
 	height: 350px;
-
-
 }
 
 .cotalog-inner {
@@ -204,10 +207,8 @@ body {
 
 
 .cotalog-intro-02 {
-	background-image: url(../img/cotalog/banner-02.jpeg);
+	background-image: url(../img/cotalog-2/banner-02.jpg);
 	height: 350px;
-
-
 }
 
 .cotalog-inner {
@@ -233,10 +234,8 @@ body {
 
 
 .cotalog-intro-03 {
-	background-image: url(../img/cotalog/banner-03.jpeg);
+	background-image: url(../img/cotalog-2/banner-03.jpg);
 	height: 350px;
-
-
 }
 
 .cotalog-inner {
@@ -262,10 +261,8 @@ body {
 
 
 .cotalog-intro-03 {
-	background-image: url(../img/cotalog/banner-03.jpeg);
+	background-image: url(../img/cotalog-2/banner-03.jpg);
 	height: 350px;
-
-
 }
 
 .cotalog-inner {
@@ -291,10 +288,8 @@ body {
 
 
 .cotalog-intro-04 {
-	background-image: url(../img/cotalog/banner-04.jpeg);
+	background-image: url(../img/cotalog-2/banner-04.jpg);
 	height: 350px;
-
-
 }
 
 .cotalog-inner {
@@ -320,10 +315,8 @@ body {
 
 
 .cotalog-intro-05 {
-	background-image: url(../img/cotalog/banner-05.jpeg);
+	background-image: url(../img/cotalog-2/banner-05.jpg);
 	height: 350px;
-
-
 }
 
 .cotalog-inner {
@@ -349,10 +342,8 @@ body {
 
 
 .cotalog-intro-06 {
-	background-image: url(../img/cotalog/banner-06.jpeg);
+	background-image: url(../img/cotalog-2/banner-06.jpg);
 	height: 350px;
-
-
 }
 
 .cotalog-inner {
@@ -378,10 +369,8 @@ body {
 
 
 .cotalog-intro-07 {
-	background-image: url(../img/cotalog/banner-07.jpeg);
+	background-image: url(../img/cotalog-2/banner-07.jpg);
 	height: 350px;
-
-
 }
 
 .cotalog-inner {
@@ -760,16 +749,16 @@ footer {
 	.header {
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
 	}
 
 	.nav__links {
-
+		padding-bottom: 9px;
 	}
 
 	.link {
 		list-style: none;
 		display: inline-block;
-		padding: 0px 2px;
 		cursor: pointer;
 	}
 
@@ -817,10 +806,10 @@ footer {
 	}
 
 	.footer-copyright span {
-	font-weight: 700;
-	font-size:10px;
-	letter-spacing: 1px;
-}
+		font-weight: 700;
+		font-size:10px;
+		letter-spacing: 1px;
+	}
 
 	.footer-copyright p {
 		color: #000;
@@ -876,8 +865,232 @@ footer {
 
 		margin-bottom: 40px;
 	}
+
+	.main-inner {
+		width: 100%;
+		max-width: 780px;
+		margin: 0 auto;
+		min-height: 400px;
+
+		padding-top: 50px;
+	}
+
+	.bread__link img {
+		width: 17px;
+		height: 14px;
+	}
+
+	.link a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #691292; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+	.link a:hover:after,
+	.link a:focus:after {
+		width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	}
+
+	.link a:hover {
+		color: #691292;
+	}
 }
 
 
+@media screen and (max-width: 590px) {
+	.container {
+		width: 100%;
+		max-width: 768px;
+		margin: 0 auto;
+	}
 
+	.main-inner {
+		width: 100%;
+		max-width: 780px;
+		margin: 0 auto;
+		min-height: 530px;
 
+		padding-top: 100px;
+	}
+
+	.cotalog-inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo img {
+		width: 70px;
+		height: 26px;
+	}
+
+	.header {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.nav__links {
+		padding-bottom: 9px;
+	}
+
+	.link {
+		list-style: none;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.link a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+
+		font-size: 5px;
+		font-weight: 700;
+
+		position: relative;
+		line-height: 1;
+
+		transition: .1s linear;
+	}
+
+	.main-img img {
+		width: 212px;
+		height: 78px;
+	}
+
+	.main-p p {
+		font-size: 15px;
+	}
+
+	.main-button {
+
+	}
+
+	.cotalog-h1 h1 {
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.cotalog-p p {
+		color: #9991a5;
+		font-size: 9px;
+	}
+
+	.cotalog-a img {
+		width: 58px;
+		height: 58px;
+	}
+
+	.footer-copyright span {
+		font-weight: 700;
+		font-size:10px;
+		letter-spacing: 1px;
+	}
+
+	.footer-copyright p {
+		color: #000;
+		font-size: 6px;
+		font-weight: bold;
+	}
+
+	.footer-p p {
+		color: #000;
+		font-size: 9px;
+		font-weigth: 700;
+	}
+
+	.footer-padding {
+		padding: 5px 40px;
+	}
+
+	.footer-img img {
+		width: 57px;
+		height: 57px;
+	}
+
+	.social-links img {
+		width: 14px;
+		height: 14px;
+	}
+
+	.main-section h1 {
+		font-size: 14px;
+	}
+
+	.section-img {
+		width: 70px;
+		height: 35px;
+	}
+
+	.main-button {
+		padding-top: 65px;
+		text-align: center;
+	}	
+
+	.main-button button {
+		color: #000;
+		background: #fff;
+		padding: 5px 15px;
+		border: none;
+		font-weight: 700;
+		font-size: 15px;
+		text-transform: uppercase;
+		border-radius: 10px;
+		cursor: pointer;
+		transition: .1s linear;
+
+		margin-bottom: 40px;
+	}
+
+	.main-inner {
+		width: 100%;
+		max-width: 780px;
+		margin: 0 auto;
+		min-height: 400px;
+
+		padding-top: 50px;
+	}
+
+	.bread__link img {
+		width: 17px;
+		height: 14px;
+	}
+
+	.link a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #691292; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+	.link a:hover:after,
+	.link a:focus:after {
+		width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	}
+
+	.link a:hover {
+		color: #691292;
+	}
+}
+
+@media screen and (max-width: 980px) {	
+	.logo img {
+		width: 158px;
+		height: 56px;
+	}
+
+	.main-inner img {
+		width: 424px;
+		height: 156px;
+	}
+}
